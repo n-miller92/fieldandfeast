@@ -24,12 +24,15 @@ html, body, h1, h2, h3, p, a, address, img, ul, li, figure, figcaption, footer, 
     
 }
 /* GLOBAL STYLES (mobile first/small) */
+body {
+    min-width: 320px;
+    font-family: "Playfair";
+}
 
 header, footer{
     background-color: var(--midnight-blue);
     color: var(--soft-white);
     text-align: center;
-    font-family: "Playfair";
 }
 
 header h1 {
