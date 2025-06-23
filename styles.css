@@ -26,7 +26,6 @@ html, body, h1, h2, h3, p, a, address, img, ul, li, figure, figcaption, footer, 
 /* GLOBAL STYLES (mobile first/small) */
 body {
     min-width: 320px;
-    font-family: "Playfair";
 }
 
 header, footer{
@@ -37,6 +36,26 @@ header, footer{
 
 header h1 {
     font-family: "Display";
+}
+
+header img {
+    max-width: 25%;
+}
+
+nav{
+    background-color: var(--champagne-gold);
+    font-family: "Playfair";
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--midnight-blue);
 }
 /* MEDIA QUERY (medium) */
 
