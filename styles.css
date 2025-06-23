@@ -2,6 +2,7 @@
 
 /* IMPORTED FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 /* CSS RESET */
 html, body, h1, h2, h3, p, a, address, img, ul, li, figure, figcaption, footer, header, nav, section {
     margin: 0;
@@ -24,6 +25,16 @@ html, body, h1, h2, h3, p, a, address, img, ul, li, figure, figcaption, footer, 
 }
 /* GLOBAL STYLES (mobile first/small) */
 
+header, footer{
+    background-color: var(--midnight-blue);
+    color: var(--soft-white);
+    text-align: center;
+    font-family: "Playfair";
+}
+
+header h1 {
+    font-family: "Display";
+}
 /* MEDIA QUERY (medium) */
 
 /* MEDIA QUERY (large) */
