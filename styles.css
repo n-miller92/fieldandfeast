@@ -1,7 +1,7 @@
 /* CSS BY Nicole Miller */
 
 /* IMPORTED FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 /* CSS RESET */
 html, body, h1, h2, h3, p, a, address, img, ul, li, figure, figcaption, footer, header, nav, section {
@@ -24,8 +24,13 @@ html, body, h1, h2, h3, p, a, address, img, ul, li, figure, figcaption, footer, 
     
 }
 /* GLOBAL STYLES (mobile first/small) */
+html, body {
+    overflow-x: hidden;
+}
+
 body {
     min-width: 320px;
+    font-family: 'Playfair Display';
 }
 
 header, footer{
@@ -39,47 +44,89 @@ header img {
 }
 
 h1 {
-    font-family: "Display";
-    font-size: 2em;
+    font-size: 3.5em;
     padding: 5px;
+    font-weight: bold;
 }
 
 header p {
     padding: 10px;
     font-style: italic;
     margin-bottom: 10px;
+    font-size: 1em;
 }
 
 nav{
     background-color: var(--champagne-gold);
-    font-family: "Playfair";
 }
 
 nav ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     list-style-type: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 nav a {
     text-decoration: none;
     color: var(--midnight-blue);
     font-weight: bold;
+    font-size: 1.5em;
 }
 
 h2 {
     font-size: 1.5em;
     color: var(--midnight-blue);
+    font-weight: bold;
 }
 
 h3 {
-    font-size: 1.5em;
+    font-size: 1.3em;
+    font-weight: bold;
 }
 
 main {
-    font-family: 'Playfair';
     padding: 30px;
     color: var(--dark-charcoal);
+}
+
+#about, #offerings, #gallery {
+    border-bottom: 2px solid var(--champagne-gold);
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+#about h2 {
+    padding-bottom: 5px;
+}
+
+#about p {
+    padding-bottom: 20px;
+}
+
+#provisions, #dining, #basket {
+    display: block;
+    background-color: var(--olive-green);
+    border-radius: 10px;
+    padding: 10px;
+    color: var(--soft-white);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#basket li {
+    list-style-position: inside;
+    padding: 2px;
+}
+
+#gallery h2 {
+    padding-bottom: 2px;
+}
+
+#gallery figure {
+    border-radius: 10px;
+    text-align: center;
+    font-style: italic;
 }
 
 
